@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关灯效果</title>
+    <style class="cp-pen-styles">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: #415062;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0;
+            margin-top: -40px;
+            margin-left: -80px;
+            /*appearance: none 去除元素本身的外观，并可以自定义*/
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            /*backface-visibility: hidden 指定元素背面面向用户时是否可见*/
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            /*检索或设置对象变换时的过渡*/
+            参数分别是
+            /*参与过渡的属性，过渡的持续时间，过渡的动画类型，延迟过渡的时间*/
+            -webkit-transition: all 0.5s cubic-bezier(0.85, 0.1, 0.05, 0.75);
+            transition: all 0.5s cubic-bezier(0.85, 0.1, 0.05, 0.75);
+            width: 80px;
+            height: 80px;
+            outline: 40px solid #fff;
+            /*对象外的线条轮廓偏移容器的值*/
+            outline-offset: -40px;
+            box-shadow: 0 0 0 4px #dfdfdf,
+                        80px 0 0 4px #dfdfdf,
+                        0 0 0 4px #dfdfdf,
+                        80px 0 0 4px #dfdfdf;
+
+
+        }
+
+        input[type="checkbox"]:checked {
+            /*transform: translateX(); 指定对象X轴的平移*/
+            -webkit-transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            -o-transform: translateX(100%);
+            transform: translateX(100%);
+            outline-color: #5d6aba;
+            box-shadow: 0 0 0 4px #dfdfdf,
+                        -80px 0 0 4px #dfdfdf,
+                        -80px 0 0 4px #dfdfdf,
+                        0 0 0 4px #dfdfdf;
+        }
+
+        input[type="checkbox"]:checked + .backgroundAnimation {
+            background-color: #baad5d;
+        }
+
+        .backgroundAnimation {
+            width: 100vw;
+            height: 100vh;
+            -webkit-transition: background-color 0.5s ease;
+            transition: background-color 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div class="backgroundAnimation"></div>
+</body>
+</html>

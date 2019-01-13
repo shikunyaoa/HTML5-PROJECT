@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5标签</title>
+    <!--base:基础标签，href:给页面所有的相对路径规定默认的基准URL-->
+    <base href="www.xxx.com/img/">
+
+    <!--默认设置链接从新的窗口打开-->
+    <base target="_blank">
+</head>
+<body>
+    <!--引用一大段话，自动缩进-->
+    <blockquote style="background: green;">超文本标记语言</blockquote>
+
+    <!--告诉浏览器内部是代码，大小适应内容-->
+    <code>
+        int a = 10; for(int i = 0; i < 10; i++)
+    </code>
+
+    <!--pre:预处理标签，告诉浏览器内容原样式显示，保留空格换行等-->
+    <pre>
+        for(int a =10; i < 100; i++){
+            print("%d", i);
+        }
+    </pre>
+
+    <!--sup:上标 sub:下标-->
+    x<sup>2</sup> + y<sup>2</sup> - 1
+    <br>
+    x<sub>1</sub> + y<sub>1</sub> = 10
+    <br>
+
+    <!--p[class=class$]{p$}*8-->
+    <p class="class1">p1</p>
+    <p class="class2">p2</p>
+    <p class="class3">p3</p>
+    <p class="class4">p4</p>
+    <p class="class5">p5</p>
+    <p class="class6">p6</p>
+    <p class="class7">p7</p>
+    <p class="class8">p8</p>
+
+    <!--border:是table的一个属性，它的值是“ ”或者是“1”-->
+    <!--border-collapse:设置表格边框是否被合并为单一的边框-->
+    <!--collapse:边框合并-->
+    <!--separate:边框分开-->
+    <table border="1" style="border-collapse:collapse; width: 200px; height: 500px;">
+
+        <!--标题-->
+        <caption>标题</caption>
+        <!--设置列-->
+        <colgroup>
+            <!--span：规定占据个数-->
+            <col span="2">
+            <col style="background-color: red;">
+            <col style="background-color: blue;">
+        </colgroup>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!--colspan:列合并-->
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <!--rowspan:行合并-->
+            <th rowspan="4"></th>
+        </tr>
+    </table>
+
+    <!--mark:标记，突出显示文本-->
+    <p><mark>今天</mark>是个好天气</p>
+
+    <!--meter:电池条，度量-->
+    <!--value:当前的值-->
+    <!--min:最小值-->
+    <!--max:最大值-->
+    <!--high：最高预警值，value大于high后颜色预警-->
+    <!--low:最低预警值-->
+    <!--标签内容：浏览器不支持会被解析-->
+    <meter>浏览器不支持</meter>
+
+    <!--progress:进度条，value：当前值，max：最大值-->
+    <progress value="50" max="100" min="50"></progress>
+
+    <!--wbr:单词间换行，拆分换行-->
+    <p>
+        i am a long words hahha<wbr>haha</wbr>
+    </p>
+
+    <!--ruby:注释-->
+    <!--rt:注释标题-->
+    <ruby>
+        你好 <rt>ni hao</rt>
+    </ruby>
+
+    <!--datalist:可选列表，input list属性值 == datalist的id值-->
+    <form action="">
+        <input type="text" name="key" value="" list="gender_list">
+        <datalist id="gender_list">
+            <option -value="1">男</option>
+            <option -value="2">女</option>
+            <option -value="3">其他</option>
+        </datalist>
+    </form>
+
+    <!--details:折叠信息，summary：标题，内容可见，open属性：显示隐藏内容-->
+    <details open="close">
+        <summary>电脑配置</summary>
+        <p>内存：16G</p>
+    </details>
+
+    <!--figure:注释，标记，figcaption:元素标题，显示位置和放置位置有关-->
+    <figure>
+        <figcaption>这是一个图片</figcaption>
+        <img src="img/1.jpg" alt="">
+    </figure>
+
+    <!--time：标记时间，告诉浏览器是一个时间，datetime:告诉浏览器是一个时间， T：间隔-->
+    <!--datetime格式： YYYY-MM-DDThh:mm:ss-->
+    <p><time datetime="2019-1-10T19:11:00">今天</time>是个好日子</p>
+
+    <!--novalidate:无效，无需验证-->
+    <form id="top_form" action="" novalidate>
+        电子邮件：<input type="email">
+        <!--step:每次加或者减得数值-->
+        数字：<input type="number" name="number" value="10" max="20" min="5" step="5">
+        网址：<input type="url" name="url">
+        取值范围：<input type="range" name="range" min="10" max="50" value="10">
+
+        <!--时间-->
+        年月日：<input type="date" name="date">
+        <br>
+        年月：<input type="month">
+        <br>
+        年周：<input type="week">
+        <br>
+        时分：<input type="time">
+        <br>
+        本地时间：<input type="datetime-local" min="2019-1-10T19:21:00">
+
+        <br>
+        颜色：<input type="color">
+        <br>
+        搜索：<input type="search">
+        <br>
+
+        <!--表单新增属性-->
+        <!--autofocus:自动获取焦点，只允许一个，默认第一个-->
+        焦点：<input type="text" autofocus="">
+        <br>
+        <!--placeholder:占位文本，文本框为空时显示内容-->
+        站位文本：<input type="text" placeholder="请输入名字">
+
+        <!--required:验证表单是否为空，为空不允许提交-->
+        <input type="text" -required="">
+
+        <!--autocomplete:记住提示功能，默认：on-->
+        <input type="text" autocomplete="off">
+
+        <!--multiple:文本多选-->
+        <input type="file" multiple="">
+
+
+    </form>
+    <!--form:属性值 == form的id属性值-->
+    <input type="submit" name="outside" form="top_form">
+
+    <!--标签导航-->
+    <nav></nav>
+    <!--文章侧边栏-->
+    <aside></aside>
+    <!--文章内容，或者评论-->
+    <artical></artical>
+    <!--文章分区-->
+    <section></section>
+
+</body>
+</html>

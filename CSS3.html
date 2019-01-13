@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3样式</title>
+</head>
+<body>
+
+    <!--后代选择器:
+    父元素 子元素
+    选择父元素下的所有子元素
+    div b{color: red;}-->
+
+    <!--子代选择器：选择元素下的第一代元素
+    .div>b{color:red;}-->
+
+    <!--att~=value:适用于多个属性值，只要包含其中一个-->
+    <!--p[col~=cl1]{color:red;}-->
+
+    <!--E[attr|=value]:选择有指定开头的元素，value：必须是个完整的单词-->
+    <!--p[lang|=zh]{color:red;}-->
+
+    <!--E[attr^=value]:选择属性值是指定开头的元素-->
+    <!--p[class^=aaa]{color:red;}-->
+
+    <!--E[attr&=value]:匹配属性值以指定字符结尾的所有元素-->
+    <!--p[class&=red]{color:red;}-->
+
+    <!--E[attr*=value]:匹配属性值包含指定字符的所有元素-->
+    <!--p[class*=bb]{color:blue;}-->
+
+    <!--E:link{};作用所有未被点击的链接元素-->
+    <!--a:link{ color:red;}-->
+
+    <!--E:visited{}:匹配点了的超链接，已经被点击过-->
+    <!--a:visited{ color:gray;}-->
+
+    <!--a:hover{}:鼠标放在元素上-->
+    <!--a:hover{ color:yellow;}-->
+
+    <!--a:active{};鼠标按下时候的状态-->
+    <!--a:active{ color:blue;}-->
+
+    <!--顺序： link - visited-hover-active-->
+
+    <!--input伪类：focus:选择具有焦点的元素，disabled:禁用，enabled:启用，checked:选中状态-->
+    <!--input:foucus{ background-color:red; }-->
+    <!--input:disabled { background-color:red;}-->
+    <!--input:enabled { background-color:red;}-->
+    <!--input:checked+span{ background-color:red;}-->
+
+
+    <!--lang: 向带有指定lang属性的元素添加样式-->
+    <!--p:lang(zh){ background-color:red; font-size:20px;}-->
+    <!--p:lang(en){ background-color:red; font-size:30px;}-->
+
+    <!--伪元素：向特定的选择器添加样式-->
+    <!--:first-letter:向文本中的第一个字母添加样式-->
+    <!--#pi::first-letter{-->
+        <!--font-size: 20px;-->
+        <!--color: red;-->
+    <!--}-->
+
+    <!--::first-line:向文本的首行添加特殊样式-->
+    <!--：before:在元素内容前面添加新的内容-->
+    <!--：after:在元素后面添加内容-->
+    #p3:before{
+        content: url(img/1.jpg);
+    }
+    #p3:after{
+        content: "after----";
+        background-color:red;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
