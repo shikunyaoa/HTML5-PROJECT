@@ -71,3 +71,167 @@ function checkScope(str) {
      "use strict";
      arr2 = [...arr1];
  })();
+
+
+ //使用解构赋值从对象中分配变量
+ const AVG_TEMPERATURES = {
+     today: 77.5,
+     tomorrow: 79
+ };
+
+ function getTempOfTmrw(avgTemperatures) {
+     "use strict";
+
+     const {tomorrow : tempOfTomorrow} = avgTemperatures;
+     return tempOfTomorrow;
+ }
+
+ //内嵌的解构赋值
+ const LOCAL_FORECAST = {
+     today: { min: 72, max: 83 },
+     tomorrow: { min: 73.3, max: 84.6 }
+ };
+
+ function getMaxOfTmrw(forecast) {
+     "use strict";
+
+     const { tomorrow : {max : maxOfTomorrow}} = forecast;
+     return maxOfTomorrow;
+ }
+
+ //使用重构分配应用于数组
+ let a = 8, b = 6;
+ (() => {
+     "use strict";
+
+     [b, a] = [a, b];
+
+ })();
+
+
+ //use destructuring assignment with rest operator to reassign array elements
+ const source = [1,2,3,4,5,6,7,8,9,10];
+ function removeFirstTwo(list) {
+     "use strict";
+
+     const [a, b, ...arr] = list;
+
+     return arr;
+ }
+ const arr = removeFirstTwo(source);
+ console.log(arr); // should be [3,4,5,6,7,8,9,10]
+ console.log(source); // should be [1,2,3,4,5,6,7,8,9,10];
+
+
+ //use destructuring assigment to pass an object as a Function's parameters
+ const stats = {
+     max: 56.78,
+     standard_deviation: 4.34,
+     median: 34.54,
+     mode: 23.87,
+     min: -0.75,
+     average: 35.85
+ };
+ const half = (function() {
+     "use strict";
+
+     return function half({min, max}) {
+
+         return (max + min) / 2.0;
+     };
+
+
+ })();
+ console.log(stats); // should be object
+ console.log(half(stats)); // should be 28.015
+
+
+ //create strings using template literals
+ const result = {
+     success: ["max-length", "no-amd", "prefer-arrow-functions"],
+     failure: ["no-var", "var-on-top", "linebreak"],
+     skipped: ["id-blacklist", "no-dup-keys"]
+ };
+ function makeList(arr) {
+     "use strict";
+
+
+     const resultDisplayArray = [`<li class="text-warning">${arr[0]}</li>`,
+         `<li class="text-warning">${arr[1]}</li>`,
+         `<li class="text-warning">${arr[2]}</li>`]
+
+
+     return resultDisplayArray;
+ }
+ /**
+  * makeList(result.failure) should return:
+  * [ `<li class="text-warning">no-var</li>`,
+  *   `<li class="text-warning">var-on-top</li>`,
+  *   `<li class="text-warning">linebreak</li>` ]
+  **/
+ const resultDisplayArray = makeList(result.failure);
+
+
+ //write concise object literal declarations using simple fields
+ const createPerson = (name, age, gender) => ({name, age, gender});
+ console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
+
+
+ //write concise declarative functions with ES6
+ const bicycle = {
+     gear: 2,
+     setGear(newGear) {
+         "use strict";
+         this.gear = newGear;
+     }
+ };
+ bicycle.setGear(3);
+ console.log(bicycle.gear);
+
+
+ //use class syntax to define a constructor function
+ function makeClass() {
+     "use strict";
+     class Vegetable {
+         constructor(name){
+             this.name = name;
+         }
+     }
+
+     return Vegetable;
+ }
+ const Vegetable = makeClass();
+ const carrot = new Vegetable('carrot');
+ console.log(carrot.name); // => should be 'carrot'
+
+
+// use getters and setters to control access to an object
+ function makeClass() {
+     "use strict";
+     /* Alter code below this line */
+
+     class Thermostat{
+         constructor(farenheit){
+             this.farenheit = farenheit;
+         }
+         get temperature(){
+             return 5 / 9 * (this.farenheit - 32);
+         }
+         set temperature(celsius){
+             this.farenheit = celsius * 9.0 / 5 + 32;
+         }
+     }
+
+     /* Alter code above this line */
+     return Thermostat;
+ }
+
+
+ //create an export fallback with export default
+ export default function subtract(x,y) {return x - y;}
+
+
+ //import a default export
+ "use strict";
+ import subtract from "math_functions";
+ subtract(7,4);
