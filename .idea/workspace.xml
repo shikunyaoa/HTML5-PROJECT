@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59dcc0e9-4ce3-4f88-8820-1f9e8e0ef66a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functional-programming.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/object-oriented-programming.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intermediate-algorithm-scripting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,17 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic-data-structures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="-300">
               <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic-algorithm-scripting.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="94" column="23" lean-forward="true" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -71,11 +61,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functional-programming.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1890">
+              <caret line="126" column="32" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/intermediate-algorithm-scripting.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="358">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,12 +113,13 @@
         <option value="$PROJECT_DIR$/basic-algorithm-scripting.js" />
         <option value="$PROJECT_DIR$/object-oriented-programming.js" />
         <option value="$PROJECT_DIR$/functional-programming.js" />
+        <option value="$PROJECT_DIR$/intermediate-algorithm-scripting.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="197" />
-    <option name="y" value="231" />
+    <option name="x" value="259" />
+    <option name="y" value="213" />
     <option name="width" value="938" />
     <option name="height" value="572" />
   </component>
@@ -179,19 +182,20 @@
       <updated>1547355548439</updated>
       <workItem from="1547355551367" duration="45944000" />
       <workItem from="1548239872255" duration="595000" />
-      <workItem from="1548242657005" duration="22091000" />
+      <workItem from="1548242657005" duration="22672000" />
+      <workItem from="1548681218670" duration="4229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68630000" />
+    <option name="totallyTimeSpent" value="73440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="197" y="231" width="938" height="572" extended-state="0" />
+    <frame x="259" y="213" width="938" height="572" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.27444443" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.27333334" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -336,6 +340,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/basic-algorithm-scripting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/object-oriented-programming.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -343,24 +354,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic-algorithm-scripting.js">
+    <entry file="file://$PROJECT_DIR$/functional-programming.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="23" lean-forward="true" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+        <state relative-caret-position="1890">
+          <caret line="126" column="32" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basic-data-structures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="-300">
           <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functional-programming.js">
+    <entry file="file://$PROJECT_DIR$/intermediate-algorithm-scripting.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
